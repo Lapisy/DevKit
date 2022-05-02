@@ -1,2 +1,4 @@
 rootProject.name = "DevKit"
 include ':app'
+include ':PerformanceDebug'
+include ':CommonKit'
