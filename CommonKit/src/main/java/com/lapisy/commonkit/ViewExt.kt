@@ -27,6 +27,10 @@ fun View.isSafeToRequestDirectly(): Boolean {
     }
 }
 
+/**
+ * 注意这里调用的view，应该是失效的那个View
+ * doc:https://juejin.cn/post/6844903829113143303
+ */
 fun View.safeRequestLayout() {
     if (isSafeToRequestDirectly()) {
         requestLayout()
